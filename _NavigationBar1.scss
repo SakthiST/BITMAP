@@ -1,0 +1,75 @@
+.NavigationBar1 {
+    height: 90px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+
+    @media (max-width:930px) {
+        background-color: black;
+    }
+
+    .NavLeft {
+        cursor: pointer;
+    }
+
+    .NavCenter {
+        color: white;
+
+        @media (max-width:930px) {
+            display: none;
+
+        }
+
+        ol {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin: 0px 20px;
+
+
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    transition: 0.4s;
+                    font-size: 1.05em;
+
+
+                    &:hover {
+                        color: yellow;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .NAvRight {
+        cursor: pointer;
+        font-size: 2em;
+        color: rgb(252, 252, 4);
+        display: none;
+
+
+        @media (max-width:930px) {
+            display: block;
+
+        }
+
+
+
+
+    }
+
+
+
+
+}

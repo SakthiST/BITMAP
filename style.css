@@ -1,0 +1,371 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.NavigationBar1 {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.563);
+  padding: 0px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+}
+
+@media (max-width: 930px) {
+  .NavigationBar1 {
+    background-color: black;
+  }
+}
+
+.NavigationBar1 .NavLeft {
+  cursor: pointer;
+}
+
+.NavigationBar1 .NavCenter {
+  color: white;
+}
+
+@media (max-width: 930px) {
+  .NavigationBar1 .NavCenter {
+    display: none;
+  }
+}
+
+.NavigationBar1 .NavCenter ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.NavigationBar1 .NavCenter ol li {
+  margin: 0px 20px;
+}
+
+.NavigationBar1 .NavCenter ol li a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 1.05em;
+}
+
+.NavigationBar1 .NavCenter ol li a:hover {
+  color: yellow;
+}
+
+.NavigationBar1 .NAvRight {
+  cursor: pointer;
+  font-size: 2em;
+  color: #fcfc04;
+  display: none;
+}
+
+@media (max-width: 930px) {
+  .NavigationBar1 .NAvRight {
+    display: block;
+  }
+}
+
+.NavigationBar2 {
+  width: 100%;
+  position: fixed;
+  top: 90px;
+  background-color: black;
+  -webkit-transform: translateY(-500px);
+          transform: translateY(-500px);
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+@media (min-width: 930px) {
+  .NavigationBar2 {
+    display: none;
+  }
+}
+
+.NavigationBar2 ol {
+  margin: 0px 50px;
+}
+
+.NavigationBar2 ol li {
+  font-size: 1.1em;
+  padding: 10px 0px;
+  border-bottom: 1px solid gray;
+}
+
+.NavigationBar2 ol li a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.NavigationBar2 ol li a:hover {
+  color: yellow;
+}
+
+.select {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.FirstPage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(./src/images/home-banner.jpg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FirstPage .FirstCenter {
+  margin-top: 100px;
+  height: 250px;
+  width: 650px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.FirstPage .FirstCenter h1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.FirstPage .FirstCenter h4 {
+  text-align: center;
+  padding: 0px 50px;
+  margin-top: -40px;
+  line-height: 25px;
+  font-size: large;
+}
+
+.FirstPage .FirstCenter .gallery {
+  color: black;
+  padding: 20px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -25px;
+  font-weight: bold;
+}
+
+.SecondPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 80px 0px;
+}
+
+.SecondPage .SecondPageOuter {
+  border: 2px solid black;
+  width: 85%;
+}
+
+.SecondPage .SecondPageOuter .listItem {
+  border: 2px solid gray;
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SecondPage .SecondPageOuter .listItem ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid red;
+}
+
+.SecondPage .SecondPageOuter .listItem ol li {
+  border: 2px solid black;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.SecondPage .SecondPageOuter .listItem ol li:hover {
+  background-color: yellow;
+}
+
+.SecondPage .SecondPageOuter .listImages {
+  margin: 20px 0px;
+  border: 2px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+}
+
+.SecondPage .SecondPageOuter .listImages .image {
+  background-image: url("./src/images/gallery-1.jpg.webp");
+  background-size: cover;
+  height: 300px;
+  width: 250px;
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.SecondPage .SecondPageOuter .listImages .image:hover .black {
+  background-color: rgba(0, 0, 0, 0.609);
+}
+
+.SecondPage .SecondPageOuter .listImages .image:hover .innertext {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.SecondPage .SecondPageOuter .listImages .image:hover .innertext .symble {
+  visibility: visible;
+}
+
+.SecondPage .SecondPageOuter .listImages .image .black {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SecondPage .SecondPageOuter .listImages .image .innertext {
+  margin-bottom: -90px;
+  color: white;
+  font-size: 2em;
+  border: 2px solid black;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.SecondPage .SecondPageOuter .listImages .image .innertext > * {
+  margin-top: 10px;
+}
+
+.SecondPage .SecondPageOuter .listImages .image .innertext .symble {
+  visibility: hidden;
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(2) {
+  background-image: url("./src/images/gallery-2.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(3) {
+  background-image: url("./src/images/gallery-3.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(4) {
+  background-image: url("./src/images/gallery-4.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(5) {
+  background-image: url("./src/images/gallery-5.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(6) {
+  background-image: url("./src/images/gallery-6.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(7) {
+  background-image: url("./src/images/gallery-7.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(8) {
+  background-image: url("./src/images/gallery-8.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(9) {
+  background-image: url("./src/images/gallery-9.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(10) {
+  background-image: url("./src/images/gallery-10.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(11) {
+  background-image: url("./src/images/gallery-11.jpg.webp");
+}
+
+.SecondPage .SecondPageOuter .listImages .image:nth-child(12) {
+  background-image: url("./src/images/gallery-12.jpg.webp");
+}
+/*# sourceMappingURL=style.css.map */

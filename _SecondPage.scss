@@ -1,0 +1,174 @@
+.SecondPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
+
+    .SecondPageOuter {
+        border: 2px solid black;
+        width: 85%;
+
+        .listItem {
+            border: 2px solid gray;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ol {
+
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid red;
+
+                li {
+                    border: 2px solid black;
+                    padding: 20px;
+                    cursor: pointer;
+                    font-size: 1.1em;
+                    transition: 0.2s;
+
+                    &:hover {
+                        background-color: yellow;
+
+                    }
+
+                }
+            }
+
+        }
+
+        .listImages {
+            margin: 20px 0px;
+            border: 2px solid orange;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+
+            .image {
+                background-image: url("./src/images/gallery-1.jpg.webp");
+                background-size: cover;
+                height: 300px;
+                width: 250px;
+                border: 2px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                &:hover {
+                    .black {
+                        background-color: rgba(0, 0, 0, 0.609);
+                    }
+
+                    .innertext {
+                        transform: translateY(-60px);
+
+                        .symble {
+                            visibility: visible;
+                        }
+                    }
+                }
+
+
+                .black {
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+
+
+
+                }
+
+                .innertext {
+                    margin-bottom: -90px;
+                    color: white;
+                    font-size: 2em;
+                    border: 2px solid black;
+                    text-align: center;
+                    transition: 0.4s;
+
+                    &>* {
+                        margin-top: 10px;
+                    }
+
+                    .symble {
+                        visibility: hidden;
+                    }
+
+                }
+            }
+
+            .image:nth-child(2) {
+                background-image: url("./src/images/gallery-2.jpg.webp");
+            }
+
+            .image:nth-child(3) {
+                background-image: url("./src/images/gallery-3.jpg.webp")
+            }
+
+            .image:nth-child(4) {
+                background-image: url("./src/images/gallery-4.jpg.webp")
+            }
+
+            .image:nth-child(5) {
+                background-image: url("./src/images/gallery-5.jpg.webp")
+            }
+
+            .image:nth-child(6) {
+                background-image: url("./src/images/gallery-6.jpg.webp")
+            }
+
+            .image:nth-child(7) {
+                background-image: url("./src/images/gallery-7.jpg.webp")
+            }
+
+            .image:nth-child(8) {
+                background-image: url("./src/images/gallery-8.jpg.webp")
+            }
+
+            .image:nth-child(9) {
+                background-image: url("./src/images/gallery-9.jpg.webp")
+            }
+
+            .image:nth-child(10) {
+                background-image: url("./src/images/gallery-10.jpg.webp")
+            }
+
+            .image:nth-child(11) {
+                background-image: url("./src/images/gallery-11.jpg.webp")
+            }
+
+            .image:nth-child(12) {
+                background-image: url("./src/images/gallery-12.jpg.webp");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+    }
+
+
+
+
+
+}

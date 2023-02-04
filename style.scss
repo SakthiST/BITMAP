@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+// NavigationBar1
+@import './_NavigationBar1.scss';
+
+// NavigationBar2
+@import './_NavigationBar2.scss';
+
+// FirstPage
+@import './_FirstPage.scss';
+
+// SecondPage
+@import './_SecondPage.scss'
