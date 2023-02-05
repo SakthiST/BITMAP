@@ -1,0 +1,124 @@
+.ThirdPage {
+    // height: 100vh;
+    // width: 100vw;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+
+    .ThirdCenter {
+        height: fit-content;
+        width: fit-content;
+        // border: 2px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        // gap: 10px;
+
+
+        // justify-content: center;
+        // flex-direction: column;
+        @media (max-width:1080px) {
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .Firstdiv {
+            // border: 2px solid orange;
+            width: 35%;
+
+            &>* {
+                margin: 20px 0px;
+            }
+
+
+            @media (max-width:1080px) {
+                width: 70%;
+
+            }
+
+            @media (max-width:890px) {
+                width: 80%;
+
+            }
+
+            @media (max-width:540px) {
+                width: 100%;
+
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        .Seconddiv {
+            // border: 2px solid red;
+            display: flex;
+            gap: 25px;
+            width: 45%;
+            padding: 50px;
+            background-color: white;
+            ;
+
+            @media (max-width:1080px) {
+                width: 70%;
+
+            }
+
+            @media (max-width:890px) {
+                width: 80%;
+
+            }
+
+            @media(max-width:740px) {
+                flex-direction: column;
+            }
+
+            @media (max-width:540px) {
+                width: 100%;
+
+            }
+
+            .SeconddivFirst {
+                // border: 2px solid pink;
+
+                .cir {
+                    height: 100px;
+                    width: 100px;
+                    // border: 2px solid black;
+                    border-radius: 50%;
+                    background-image: url("./src/images/test-1.png.webp");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                }
+
+            }
+
+            .SeconddivSecond {
+                &>* {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    font-size: 1.1em;
+                    color: gray;
+                }
+            }
+
+        }
+
+
+
+
+
+
+
+
+    }
+
+}
